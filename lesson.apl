@@ -5,8 +5,8 @@ flashcard2 ← 'a | un/une'
 ⍝ and the , symbol is for concatenation of arrays
 
 
-∇Z←A showFlashcard F
- Z ← F , '\n'
+∇result ← A showFlashcard x
+ result ← x , '\n'
 ∇
 
 ⍝ We need to find a solution to the problem that it does not deal with \n
