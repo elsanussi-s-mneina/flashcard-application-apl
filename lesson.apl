@@ -5,19 +5,15 @@ flashcards ← flashcard1 flashcard2
 ⍝ and the , symbol is for concatenation of arrays
 
 
-∇result ← A showFlashcard x
- result ← x , '\n'
+∇result ← A putOnSeparateLines xs
+ ⍝⍝ xs is a list of strings
+ result ← (1 ⊃ ⍴ xs) 1 ⍴ xs
+ ⍝ We are changing the dimensions of xs from
+ ⍝  1 by n to n by 1
+ ⍝  1 ⊃ gets the first element out of an array
+
+ ⍝ This is my way of printing what is effectively a newline
+ ⍝ character.
 ∇
 
-⍝ We need to find a solution to the problem that it does not deal with \n
-⍝ as expected. I will have to look up how APL can print new lines.
-
-
-lessonSummary ← ⊃ ,/ showFlashcard ¨ flashcards
-⍝ We need the extra ⊃ (it gets the first element) to get it out of the "box".
-⍝ I guess ,/ returned an array within an arrays
-⍝ We need to do this so that our test passes.
-
-⍝ If you know some Haskell, the following will make sense:
-⍝ The ¨  is basically the map higher order function (but in infix notation).
-⍝ Note The / here is basically the fold operator from Haskell.
+lessonSummary ← flashcards
