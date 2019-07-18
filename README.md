@@ -1,5 +1,11 @@
+# flashcard-application-apl
+A program that lets a person study flashcards, implemented in APL.
 
-# Installing APL
+This is mainly a programming exercise for learning the APL language.
+
+
+
+## Installing APL
 
 https://www.gnu.org/software/apl/apl.html
 
@@ -15,9 +21,16 @@ $ ./configure
 $ make
 $ make install
 
-# Running the program
-$ apl -f hello.apl
+## Running the program
+$ ./run.sh
 
-# Exiting APL
+If that does not work open the file run.sh in a text editor, and try the commands contained therein at your terminal.
+
+## Running the tests
+$ ./test.hs
+
+I doubt there is a unit testing framework, so I just use a number to indicate how many tests passed.
+
+## Exiting APL
 Type The contents of the following 
 ")OFF" exactly without quotes and press enter.
