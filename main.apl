@@ -11,7 +11,7 @@ sampleFlashcards ← flashcard1 flashcard2
 'Enter ''b'' to show the back of each card.'
 ''
 
-
+'>'
 inp ← ⍞ ⍝ input from user
 
 ⍝ If user input is 'a' print the fronts and backs of each flashcard
