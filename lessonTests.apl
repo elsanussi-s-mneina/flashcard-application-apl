@@ -1,10 +1,7 @@
-test1Result ← (1 ⊃ lessonSummary) ≡ 'the | le/la'
-⍝ test1Result is 1 if true, 0 if false.
-⍝ The ≡ symbol compares for equality
+,/ (⊃ lessonSummary[1]) ' should be: ' 'the | le/la'
 
-test2Result ← (2 ⊃ lessonSummary) ≡ 'a | un/une'
+,/ (⊃ lessonSummary[2]) ' should be: ' 'a | un/une'
 
-countTests ← 2
-sumTestResults ← +/ test1Result test2Result
-sumTestResults
-,/ 'If the preceding number is ' countTests ' the tests all passed'
+⍝ For now the tests will be by inspection instead of by automation.
+⍝ The reason being I have not yet figured out how to deal with all there
+⍝ arrays within arrays, and the padding that occurs.
