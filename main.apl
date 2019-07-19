@@ -27,4 +27,4 @@ inp ← ⍞ ⍝ input from user
 ('' (putOnSeparateLines backSummary sampleFlashcards)) [1 + (inp[1] ≡ 'b')]
 
 unrecogn ← 'Unrecognized input: (', inp, ')'
-(unrecogn '')[1 + ∨/ inp[1] ≡ 'a']
+(unrecogn '')[1 + ∨/ (inp[1] ≡ 'a') (inp[1]≡ 'f') (inp[1]≡'b')]
