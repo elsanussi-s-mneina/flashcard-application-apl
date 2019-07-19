@@ -4,12 +4,14 @@
 ⍝ It is an index into an array. Notice that indices start at 1.
 ⍝ But 0 is false. So we have to add 1. So that the first element in the
 ⍝ array represents the else case (what happens when the condition is false).
+⍝ Unfortunately it might say all the tests pass when
+⍝ there is a VALUE ERROR. So, it is not as automatic as it should be.
+
 
 flashcard1 ← 'the' 'le/la'
 flashcard2 ← 'a' 'un/une'
 
 flashcards ← flashcard1 flashcard2
-
 
 'Running Unit tests.'
 
@@ -94,6 +96,15 @@ allPassed ← allPassed ∧ r
 ('FAILURE' 'passed.') [r + 1]
 
 
+'Testing backSummary...'
+
+r ← 'le/la' 'un/une' ≡ backSummary flashcards
+passedCount ← passedCount + r
+allPassed ← allPassed ∧ r
+'Test 12'
+('FAILURE' 'passed.') [r + 1]
+
+
 'Count of tests that passed: '
 passedCount
-('At least one test failed!' 'All tests passed.') [allPassed + 1]
+('At least one test failed!' 'All tests passed (but please scroll up in case there are any value errors.)') [allPassed + 1]
