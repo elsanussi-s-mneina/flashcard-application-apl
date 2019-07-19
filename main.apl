@@ -9,6 +9,7 @@ sampleFlashcards ← flashcard1 flashcard2
 'Enter ''a'' to show both front and back of each card.'
 'Enter ''f'' to show the front of each card.'
 'Enter ''b'' to show the back of each card.'
+'Enter ''x'' to exit the application.'
 ''
 
 '>'
@@ -26,5 +27,7 @@ inp ← ⍞ ⍝ input from user
 ('' 'Print only backs of each card:') [1 + (inp = 'b')]
 ('' (putOnSeparateLines backSummary sampleFlashcards)) [1 + (inp = 'b')]
 
+('' 'Exiting program.') [1 + (inp = 'x')]
+
 unrecogn ← 'Unrecognized input: (' , inp , ')'
-(unrecogn ' ')[1 + ⊃ ∨/ (inp = 'a') (inp = 'f') (inp = 'b')]
+(unrecogn ' ')[1 + ⊃ ∨/ (inp = 'a') (inp = 'f') (inp = 'b') (inp = 'x')]
