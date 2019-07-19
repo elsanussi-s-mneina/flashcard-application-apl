@@ -26,3 +26,9 @@ showFlashcardTest2 ← 'b | B' ≡ showFlashcard 'b' 'B'
 
 showFlashcardTest3 ← 'c | C' ≡ showFlashcard 'c' 'C'
 ('showFlashcardTest3: FAILURE' 'showFlashcardTest3 passed.') [showFlashcardTest3 + 1]
+
+showFlashcardTest4 ← 'Z | d' ≡ showFlashcard 'Z' 'd'
+('showFlashcardTest4: FAILURE' 'showFlashcardTest4 passed.') [showFlashcardTest4 + 1]
+
+showFlashcardTest5 ← 'AB | abc' ≡ showFlashcard 'AB' 'abc'
+('showFlashcardTest5: FAILURE' 'showFlashcardTest5 passed.') [showFlashcardTest5 + 1]
