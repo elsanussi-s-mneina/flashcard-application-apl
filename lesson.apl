@@ -1,3 +1,6 @@
+⍝ Description : A lesson consists of flashcard data, and related functions.
+
+
 ⍝ So the ← symbol is for assignment
 ⍝ and the , symbol is for concatenation of arrays
 
@@ -19,5 +22,5 @@ showFlashcard ← { (⊃ ⍵[1]) , ' | ', (⊃ ⍵[2]) }
  ⍝ I believe it has something to do with getting the
  ⍝ string out of its box.
 
-
+⍝⍝ The front and backs of every flashcard in a given list.
 lessonSummary ← { showFlashcard ¨ ⍵ }
