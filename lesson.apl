@@ -1,5 +1,5 @@
 flashcard1 ← 'the' 'le/la'
-flashcard2 ← 'a ' 'un/une'
+flashcard2 ← 'a' 'un/une'
 
 flashcards ← flashcard1 flashcard2
 ⍝ So the ← symbol is for assignment
@@ -7,7 +7,8 @@ flashcards ← flashcard1 flashcard2
 
 ∇result ← A putOnSeparateLines xs
  ⍝⍝ xs is a list of strings
- result ← (1 ⊃ ⍴ xs) 1 ⍴ xs
+ result ← ⍪ xs
+ ⍝ (1 ⊃ ⍴ xs) 1 ⍴ xs
  ⍝ We are changing the dimensions of xs from
  ⍝  1 by n to n by 1
  ⍝  1 ⊃ gets the first element out of an array
@@ -18,7 +19,7 @@ flashcards ← flashcard1 flashcard2
 
 ∇result ← A showFlashcard xs
  ⍝⍝ xs is a list of strings
- result ← ⊃ ⍪/  xs[1] ⍪ ' | ' ⍪ xs[2]
+ result ← (⊃ xs[1]) , ' | ', (⊃ xs[2])
  ⍝ We are changing the dimensions of xs from
  ⍝  1 by n to n by 1
  ⍝  1 ⊃ gets the first element out of an array
