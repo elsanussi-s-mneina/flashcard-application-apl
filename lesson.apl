@@ -1,7 +1,3 @@
-flashcard1 ← 'the' 'le/la'
-flashcard2 ← 'a' 'un/une'
-
-flashcards ← flashcard1 flashcard2
 ⍝ So the ← symbol is for assignment
 ⍝ and the , symbol is for concatenation of arrays
 
@@ -24,4 +20,4 @@ showFlashcard ← { (⊃ ⍵[1]) , ' | ', (⊃ ⍵[2]) }
  ⍝ string out of its box.
 
 
-lessonSummary ← showFlashcard ¨ flashcards
+lessonSummary ← { showFlashcard ¨ ⍵ }

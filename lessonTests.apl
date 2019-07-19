@@ -4,13 +4,18 @@
 ⍝ But 0 is false. So we have to add 1. So that the first element in the
 ⍝ array represents the else case (what happens when the condition is false).
 
+flashcard1 ← 'the' 'le/la'
+flashcard2 ← 'a' 'un/une'
+
+flashcards ← flashcard1 flashcard2
+
 
 'Running Unit tests.'
-test1Result ← 'the | le/la' ≡ ⊃ lessonSummary[1]
+test1Result ← 'the | le/la' ≡ ⊃ (lessonSummary flashcards)[1]
 ('Test 1: FAILURE' 'Test 1 passed.') [test1Result + 1]
 
 
-test2Result ← 'a | un/une' ≡ ⊃ lessonSummary[2]
+test2Result ← 'a | un/une' ≡ ⊃ (lessonSummary flashcards)[2]
 ('Test 2: FAILURE' 'Test 2 passed.') [test2Result + 1]
 
 showFlashcardTest1 ← 'a | A' ≡ showFlashcard 'a' 'A'
