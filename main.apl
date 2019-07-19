@@ -10,8 +10,10 @@ sampleFlashcards ← flashcard1 flashcard2
 'Enter ''f'' to show the front of each card.'
 ''
 
+
 inp ← ⍞ ⍝ input from user
 
 sorryNotImp ←  'Sorry, that feature is not implemented yet.'
 (sorryNotImp 'Printing Lesson summary:') [1 + (inp[1] ≡ 'a')]
 ('' (putOnSeparateLines lessonSummary sampleFlashcards)) [1 + (inp[1] ≡ 'a')]
+('' (putOnSeparateLines frontSummary sampleFlashcards)) [1 + (inp[1] ≡ 'f')]

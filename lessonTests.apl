@@ -63,6 +63,37 @@ allPassed ← allPassed ∧ r
 'Test 7: AB | abc should be how a flashcard with AB on front and abc on back'
 ('FAILURE' 'passed.') [r + 1]
 
+
+'Testing showFront ...'
+r ← 'Z' ≡ showFront 'Z' 'd'
+passedCount ← passedCount + r
+allPassed ← allPassed ∧ r
+'Test 8: Z should be how to show the front of a flashcard with Z on the front and d on back.'
+('FAILURE' 'passed.') [r + 1]
+
+r ← 'one' ≡ showFront 'one' 'une'
+passedCount ← passedCount + r
+allPassed ← allPassed ∧ r
+'Test 9: should return "one" when the front side is "one"'
+('FAILURE' 'passed.') [r + 1]
+
+r ← 'three' ≡ showFront 'three' 'h'
+passedCount ← passedCount + r
+allPassed ← allPassed ∧ r
+'Test 10: should return "three" when the front side is "three"'
+('FAILURE' 'passed.') [r + 1]
+
+
+
+'Testing frontSummary...'
+
+r ← 'the' 'a' ≡ frontSummary flashcards
+passedCount ← passedCount + r
+allPassed ← allPassed ∧ r
+'Test 11'
+('FAILURE' 'passed.') [r + 1]
+
+
 'Count of tests that passed: '
 passedCount
 ('At least one test failed!' 'All tests passed.') [allPassed + 1]

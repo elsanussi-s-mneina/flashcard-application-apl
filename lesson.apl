@@ -24,3 +24,8 @@ showFlashcard ← { (⊃ ⍵[1]) , ' | ', (⊃ ⍵[2]) }
 
 ⍝⍝ The front and backs of every flashcard in a given list.
 lessonSummary ← { showFlashcard ¨ ⍵ }
+
+⍝⍝ Show the front of a flashcard.
+showFront ← {⊃ ⍵[1]}
+
+frontSummary ← {showFront ¨ ⍵} 
