@@ -8,24 +8,17 @@ flashcards ← flashcard1 flashcard2
 ∇result ← A putOnSeparateLines xs
  ⍝⍝ xs is a list of strings
  result ← ⍪ xs
- ⍝ (1 ⊃ ⍴ xs) 1 ⍴ xs
- ⍝ We are changing the dimensions of xs from
- ⍝  1 by n to n by 1
- ⍝  1 ⊃ gets the first element out of an array
-
- ⍝ This is my way of printing what is effectively a newline
- ⍝ character.
+ ⍝ ⍪ This symbol is a way of changing the array from having n columns and
+ ⍝ 1 row, to having 1 row and n columns.
 ∇
 
 ∇result ← A showFlashcard xs
  ⍝⍝ xs is a list of strings
  result ← (⊃ xs[1]) , ' | ', (⊃ xs[2])
- ⍝ We are changing the dimensions of xs from
- ⍝  1 by n to n by 1
- ⍝  1 ⊃ gets the first element out of an array
-
- ⍝ This is my way of printing what is effectively a newline
- ⍝ character.
+ ⍝ The comma is basically concatenation of arrays or strings.
+ ⍝ I'm not exactly sure why we need the ⊃ symbol.
+ ⍝ I believe it has something to do with getting the
+ ⍝ string out of its box.
 ∇
 
 
