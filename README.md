@@ -26,8 +26,14 @@ $ ./run.sh
 
 If that does not work open the file run.sh in a text editor, and try the commands contained therein at your terminal.
 
+## After running the program type the following to close it:
+)OFF
+
 ## Running the tests
 $ ./test.hs
+
+## After running the test type the following to close it:
+)OFF
 
 I doubt there is a unit testing framework, so I just use a number to indicate how many tests passed.
 
