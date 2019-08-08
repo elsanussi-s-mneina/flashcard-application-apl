@@ -30,7 +30,7 @@ If that does not work open the file run.sh in a text editor, and try the command
 )OFF
 
 ## Running the tests
-$ ./test.hs
+$ ./test.sh
 
 ## After running the test type the following to close it:
 )OFF
